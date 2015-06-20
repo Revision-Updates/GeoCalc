@@ -1,0 +1,243 @@
+'ProgramMode:RUN
+ClrText
+"Geometry Equation    Solver"
+Lbl 1
+Menu "GEOMETRY TYPE","Area",2,"Volume",3,"Surface Area",4,"Exit",Y
+
+Lbl 2
+ClrText
+"Area Equations"
+Menu "Select Geon","Square",A,"Rectangle",B,"Parallelogram",C,"Trapezoid",D,"Circle",E,"Ellipse",F,"Triangle(s)",G,"Regular Polygon",L,"Exit",Y
+
+Lbl 3
+ClrText
+"Volume Equations"
+Menu "Select Geon","Cube",M,"Rectangular Prism",N,"Irregular Prism",O,"Cylinder",P,"Pyramid",Q,"Cone",R,"Sphere",S,"Ellipsoid",T,"Exit",Y
+
+Lbl 4
+ClrText
+"Surface Area Equations"
+Menu "Select Geon","Cube",U,"Prism(s)",5,"Sphere",X,"Exit",Y
+
+Lbl 5
+ClrText
+"Select Prism Section"
+Menu "Select Prism","Lateral Area",V,"Total Area",W,"Exit",Y
+
+Lbl A
+ClrText
+"Square Area"
+"Length of Side"?->A
+((A)^<2>)->X
+XDispsStop
+
+Lbl B
+ClrText
+"Rectangle Area"
+"Length of Side A"?->A
+"Length of Side B"?->B
+((A)(B))->X
+XDispsStop
+
+Lbl C
+ClrText
+"Parallelogram Area"
+"Length of Base"?->B
+"Length of Height B"?->H
+((B)(H))->X
+XDispsStop
+
+Lbl D
+ClrText
+"Trapezoid Area"
+"Length of Base 1"?->B
+"Length of Base 2"?->C
+"Length of Height"?->H
+(((H)/2)((B)+(C)))->X
+XDispsStop
+
+Lbl E
+ClrText
+"Circle Area"
+"Length of Radius"?->R
+((pi)((R)^<2>))->X
+XDispsStop
+
+Lbl F
+ClrText
+"Ellipse Area"
+"Length of Radius 1"?->R
+"Length of Radius 2"?->S
+((pi)(R)(S))->X
+XDispsStop
+
+Lbl G
+ClrText
+"Triangle OPTIONS"
+Menu "Select Geon","Standard Triangle",H,"Equilateral Triangle",I,"Triangle (given SAS)",J,"Triangle (Heron's Formula)",K,"Exit",Y
+
+Lbl H
+ClrText
+"Standard Triangle    Area"
+"Length of Base"?->B
+"Length of Height"?->H
+((1frac2)(B)(H))->X
+XDispsStop
+
+Lbl I
+ClrText
+"Equilateral Triangle Area"
+"Length of Side"?->A
+((1frac4)(Sqrt(3))((A)^<2>))->X
+XDispsStop
+
+Lbl J
+ClrText
+"Triangle given SAS Area"
+"Length of Side A"?->A
+"Length of Side B"?->B
+"Angle of C"?->C
+((1frac2)(A)(B)(sin (C)))->X
+XDispsStop
+
+Lbl K
+ClrText
+"Triangle Area        (given a,b,c), using Heron's Formula"
+"Length of Side A"?->A
+"Length of Side B"?->B
+"Length of Side C"?->C
+(((A)+(B)+(C))/2)->S
+(Sqrt((S)((S-(A))(S-(B))(S-(C)))))->X
+XDispsStop
+
+Lbl L
+ClrText
+"Regular Polygon Area"
+"Number of Sides"?->N
+"Length from Center to a Corner"?->S
+((1frac2)(N)(sin (360fracN))((S)^<2>))->X
+XDispsStop
+
+Lbl M
+ClrText
+"Cube Volume"
+"Length of Side"?->A
+((A)^<3>)->X
+XDispsStop
+
+Lbl N
+ClrText
+"Rectangular Volume"
+"Length of Side A"?->A
+"Length of Side B"?->B
+"Length of Side C"?->C
+((A)(B)(C))->X
+XDispsStop
+
+Lbl O
+ClrText
+"Irregular Prism      Volume, repeat for   each section of prism"
+"Length of Base"?->B
+"Length of Height"?->H
+((B)(H))->X
+XDispsStop
+
+Lbl P
+ClrText
+"Cylinder Volume"
+Menu "Select Type","Known Cross-section",6,"Unknown Cross-section",7,"Exit",Y
+
+Lbl 6
+ClrText
+"Cylinder Volume"
+"Length of Base"?->B
+"Length of Height"?->H
+((B)(H))->X
+XDispsStop
+
+Lbl 7
+ClrText
+"Cylinder Volume"
+"Length of Radius"?->R
+"Length of Height"?->H
+((pi)((R)^<2>)(H))->X
+XDispsStop
+
+Lbl Q
+ClrText
+"Pyramid Volume"
+"Length of Base"?->B
+"Length of Height"?->H
+((1frac3)(B)(H))->X
+XDispsStop
+
+Lbl R
+ClrText
+"Cone Volume"
+Menu "Select Type","Known Cross-section",8,"Unknown Cross-section",9,"Exit",Y
+
+Lbl 8
+ClrText
+"Cone Volume"
+"Length of Base"?->B
+"Length of Height"?->H
+((1frac3)(B)(H))->X
+XDispsStop
+
+Lbl 9
+ClrText
+"Cone Volume"
+"Length of Radius"?->R
+"Length of Height"?->H
+((1frac3)(pi)((R)^<2>)(H))->X
+XDispsStop
+
+Lbl S
+ClrText
+"Sphere Volume"
+"Length of Radius"?->R
+((4frac3)(pi)((R)^3))->X
+XDispsStop
+
+Lbl T
+ClrText
+"Ellipsoid Volume"
+"Length of Radius 1"?->R
+"Length of Radius 2"?->S
+"Length of Radius 3"?->T
+((4frac3)(pi)(R)(S)(T))->X
+XDispsStop
+
+Lbl U
+ClrText
+"Cube S.A."
+"Length of Side"?->A
+((6)((A)^<2>)->X
+XDispsStop
+
+Lbl V
+ClrText
+"Prism Lateral S.A."
+"Perimeter of Base"?->B
+"Length of Prism"?->L
+((B)(L))->X
+XDispsStop
+
+Lbl W
+ClrText
+"Prism Total S.A."
+"Perimeter of Base"?->B
+"Length of Prism"?->L
+(((B)(L))+((2)(B)))->X
+XDispsStop
+
+Lbl X
+ClrText
+"Sphere S.A."
+"Length of Radius"?->R
+((4)(pi)((R)^<2>))->X
+XDispsStop
+
+Lbl Y
+ClrText
+Stop
