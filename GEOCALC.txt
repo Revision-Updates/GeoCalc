@@ -7,22 +7,22 @@ Menu "GEOMETRY TYPE","Area",2,"Volume",3,"Surface Area",4,"Exit",Y
 Lbl 2
 ClrText
 "Area Equations"
-Menu "Select Geon","Square",A,"Rectangle",B,"Parallelogram",C,"Trapezoid",D,"Circle",E,"Ellipse",F,"Triangle(s)",G,"Regular Polygon",L,"Exit",Y
+Menu "Select Geon","Square",A,"Rectangle",B,"Parallelogram",C,"Trapezoid",D,"Circle",E,"Ellipse",F,"Triangle(s)",G,"Regular Polygon",L,"Exit",1
 
 Lbl 3
 ClrText
 "Volume Equations"
-Menu "Select Geon","Cube",M,"Rectangular Prism",N,"Irregular Prism",O,"Cylinder",P,"Pyramid",Q,"Cone",R,"Sphere",S,"Ellipsoid",T,"Exit",Y
+Menu "Select Geon","Cube",M,"Rectangular Prism",N,"Irregular Prism",O,"Cylinder",P,"Pyramid",Q,"Cone",R,"Sphere",S,"Ellipsoid",T,"Exit",1
 
 Lbl 4
 ClrText
 "Surface Area Equations"
-Menu "Select Geon","Cube",U,"Prism(s)",5,"Sphere",X,"Exit",Y
+Menu "Select Geon","Cube",U,"Prism(s)",5,"Sphere",X,"Exit",1
 
 Lbl 5
 ClrText
 "Select Prism Section"
-Menu "Select Prism","Lateral Area",V,"Total Area",W,"Exit",Y
+Menu "Select Prism","Lateral Area",V,"Total Area",W,"Exit",4
 
 Lbl A
 ClrText
@@ -74,7 +74,7 @@ XDispsStop
 Lbl G
 ClrText
 "Triangle OPTIONS"
-Menu "Select Geon","Standard Triangle",H,"Equilateral Triangle",I,"Triangle (given SAS)",J,"Triangle (Heron's Formula)",K,"Exit",Y
+Menu "Select Geon","Standard Triangle",H,"Equilateral Triangle",I,"Triangle (given SAS)",J,"Triangle (Heron's Formula)",K,"Exit",2
 
 Lbl H
 ClrText
@@ -145,7 +145,7 @@ XDispsStop
 Lbl P
 ClrText
 "Cylinder Volume"
-Menu "Select Type","Known Cross-section",6,"Unknown Cross-section",7,"Exit",Y
+Menu "Select Type","Known Cross-section",6,"Unknown Cross-section",7,"Exit",3
 
 Lbl 6
 ClrText
@@ -174,7 +174,7 @@ XDispsStop
 Lbl R
 ClrText
 "Cone Volume"
-Menu "Select Type","Known Cross-section",8,"Unknown Cross-section",9,"Exit",Y
+Menu "Select Type","Known Cross-section",8,"Unknown Cross-section",9,"Exit",3
 
 Lbl 8
 ClrText
